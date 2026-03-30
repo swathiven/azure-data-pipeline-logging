@@ -1,0 +1,9 @@
+{
+	"name": "projectfd",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "10779e58-db6c-471c-8e55-f96d55007035",
+		"tenantId": "637e6c1d-10ab-4258-92b1-9783d1406909"
+	}
+}
