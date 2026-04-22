@@ -29,7 +29,7 @@
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
+							"type": "AzureBlobStorageWriteSettings"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
@@ -61,8 +61,14 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_sink_adls",
-						"type": "DatasetReference"
+						"referenceName": "ds_source_blob",
+						"type": "DatasetReference",
+						"parameters": {
+							"inputfile": {
+								"value": "@pipeline().parameters.inputfile",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
