@@ -1,0 +1,32 @@
+{
+	"name": "ds_alds_sourcefolder",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adlsstroage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "input",
+				"fileSystem": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "country_code",
+				"type": "String"
+			},
+			{
+				"name": "country_name",
+				"type": "String"
+			}
+		]
+	}
+}
