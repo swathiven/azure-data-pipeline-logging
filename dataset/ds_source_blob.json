@@ -19,7 +19,8 @@
 					"value": "@dataset().inputfile",
 					"type": "Expression"
 				},
-				"container": "input"
+				"folderPath": "input",
+				"container": "data"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
